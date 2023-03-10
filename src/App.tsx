@@ -27,7 +27,7 @@ function App() {
             <Content />
             <RenderError />
             <Footer />
-            <DevMenu />
+            {/* <DevMenu />  */}
          </Provider>
       </Box>
    );
