@@ -77,9 +77,9 @@ const Header = () => {
                               cursor: 'pointer',
                               marginRight: '1rem',
                            }}
-                           onClick={() => {
-                              dispatch(createNewDeck());
-                              navigate(`decks/${currentDeck.deck_id}`);
+                           onClick={async () => {
+                              await dispatch(createNewDeck());
+                              // navigate(`decks/${currentDeck.deck_id}`);
                            }}
                         >
                            <CasinoIcon />
